@@ -84,10 +84,7 @@ transition: transform 500ms ease ; */
     transform-origin: left;
     transition: transform 500ms ease;
 }
-.card:hover .card-title::after,
-.card:focus-within .card-title::after{
-    transform: scaleX(1);
-}
+
 .card-body{
     color: rgb(255 255 255/ 0.8);
     font-size: 18px;
@@ -95,7 +92,7 @@ transition: transform 500ms ease ; */
 }
 @media (hover) {
     .card-content{
-        transform:translateY(65%);
+        transform:translateY(75%);
         transition: transform 500ms ease ;
     }
     .card:hover .card-content,
@@ -118,6 +115,10 @@ transition: transform 500ms ease ; */
     .card-title::after{
         transform: scaleX(0);
     }
+    .card:hover .card-title::after,
+.card:focus-within .card-title::after{
+    transform: scaleX(1);
+}
 }
 .button{
     cursor:pointer;
