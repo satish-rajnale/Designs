@@ -1,5 +1,6 @@
 :root{
-    --clr-neutral-900: hsl(207, 19%,9%);
+    /* --clr-neutral-900: hsl(207, 19%,9%); */
+     --clr-neutral-900: rgb(29 31 32/1);
     --clr-neutral-100: hsl(0, 0%,100%);
     --clr-accent-400: hsl(142, 90%,61%);
 }
@@ -11,19 +12,35 @@
 
 body{
     display: grid;
-    min-height: 100vh;
+    height: 90vh;
     place-items: center;
+
     line-height: 1.6;
     font-family: sans-serif;
     background: var(--clr-neutral-900);
   
 }
+.card-base{
+    background-color: aliceblue;
+    margin-top: 3em;
+    padding: auto;
+    display: flex;
+    place-items: center;
+    min-width: 400px;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-content: center;
+background: rgb(47, 46, 46);
+    height:90%;
+}
+
 .card{
     color: var(--clr-neutral-100);
-    background-image: url(card.jpg);
+    background-image: url(bg.jpeg);
     background-size: cover;
-    padding: 10rem 0 0;
-    max-width: 35ch;
+    padding: 3rem 0 0;
+  box-sizing: border-box;
+    max-width: 22ch;
     border-radius: 0.5rem;
     overflow: hidden;
     transition: transform 500ms ease;
@@ -34,7 +51,7 @@ body{
 }
 
 .card-content{
-    --padding:1.5rem;
+    --padding:0.8rem;
     padding:var(--padding);
     /* background:hsl(0 0% 0%/0.6); */
     background: linear-gradient(
@@ -51,6 +68,7 @@ transition: transform 500ms ease ; */
 .card-title{
     position: relative;
     width:max-content;
+    font-size: 25px;
     
 }
 
@@ -72,6 +90,8 @@ transition: transform 500ms ease ; */
 }
 .card-body{
     color: rgb(255 255 255/ 0.8);
+    font-size: 18px;
+    height:18ch;
 }
 @media (hover) {
     .card-content{
@@ -103,7 +123,8 @@ transition: transform 500ms ease ; */
     cursor:pointer;
     display: inline-block;
     color: var(--clr-neutral-900);
-    padding:0.5em 1.25em;
+    padding:0.2em 0.25em;
+    font-size: 0.8rem;
     text-decoration: none;
     background-color: var(--clr-accent-400);
     border-radius: 0.25em;
