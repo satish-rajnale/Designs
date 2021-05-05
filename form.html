@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container bg-secondary" style="margin-top: 40px;padding:20px;border-radius:12px; width: 500px">
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="inputEmail4">Name:</label>
+            <input
+            required
+              type="text"
+              placeholder="enter name"
+              class="form-control"
+              id="inputEmail4"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input
+          required
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder="enter address"
+          />
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputPassword4" >Mobile no:</label>
+            <input
+            required
+            pattern="[0-9]{10}"
+              type="number"
+              placeholder="enter phone no"
+              class="form-control"
+              id="inputPassword4"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email:</label>
+            <input
+              type="email"
+              placeholder="enter mail id"
+              id="emailinput"
+              onchange="isEmail"
+            
+              size="30"
+              required
+              class="form-control"
+            />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="birth">Birth Date:</label>
+            <input id="birth" type="date"   required class="form-control" />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="birth">Marrital Status:</label>
+            <select  required class="custom-select">
+              <option value="1">Married</option>
+              <option value="2">Unmarried</option>
+              <option value="3">Single</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          
+            Gender:
+            <div class="form-group custom-control custom-control-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="exampleRadios"
+                value="Male"
+                checked
+              />
+              <label
+                class="form-check-label"
+                id="gridRadios1"
+                for="gridRadios1"
+              >
+                Male
+              </label>
+            </div>
+            <div class="form-group custom-control custom-control-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="exampleRadios"
+                value="Female"
+              />
+              <label class="form-check-label" for="gridRadios2"> Female </label>
+            </div>
+ 
+        </div>
+       
+        <button class="btn btn-dark col-md-12" type="submit">Submit form</button>
+      </form>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $("#emailinput").change(function () {
+        let value = $("#emailinput").val;
+        console.log(value);
+      });
+    });
+    function IsEmail(email) {
+      var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+      if (!regex.test(email)) {
+        return false;
+      } else {
+        return true;
+      }
+    }
+  </script>
+</html>
