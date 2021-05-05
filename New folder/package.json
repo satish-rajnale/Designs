@@ -1,0 +1,14 @@
+{
+  "name": "satish-css-designs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "SATISH",
+  "scripts": {
+    "deploy":"gh-pages -d dist"
+  },
+  "homepage": "https://satish-rajnale.github.io/Designs",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
