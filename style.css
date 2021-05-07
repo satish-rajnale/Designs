@@ -40,7 +40,7 @@ background: rgb(47, 46, 46);
 
 .card{
     color: var(--clr-neutral-100);
-    background-image: url(/png/bg.jpeg);
+    background-image: url(./png/bg.jpeg);
     background-size: cover;
     padding: 3rem 0 0;
   box-sizing: border-box;
