@@ -34,17 +34,30 @@ img {
 
 .game {
   position: relative;
+  cursor: pointer;
   width: 8rem;
 }
+
+.streamers {
+  display: flex;
+  text-align: center;
+  img {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+  }
+}
+
 .rank {
   font-weight: bold;
   position: absolute;
   top: 0;
+  z-index: 1000;
   right: 1em;
   background: rgba(0, 0, 0, 0.65);
   padding: 0.2em 0.4em 0.55em;
   clip-path: polygon(100% 0, 100% 100%, 49% 85%, 0 100%, 0 0);
-  transition: $transitionCubic ease;
+  transition: $transitionCubic;
 }
 
 .btn {
@@ -73,10 +86,28 @@ img {
     justify-content: space-between;
     align-items: center;
   }
+  .viewers {
+    display: flex;
+    align-items: center;
+  }
+  .icon::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: inline-block;
+    font-style: normal;
+    text-rendering: auto;
+    font-variant: normal;
+    -webkit-font-smoothing: antialiased;
+  }
+  // creating fontawesome user icon
+  .viewers::before {
+    content: "\f007";
+    font-size: 0.75em;
+    color: rgba(255, 255, 255, 0.75);
+    margin-right: 0.4em;
+  }
   .streamers {
-    
     img {
-     
       border: 2px solid $clr-dark;
       &:nth-of-type(1) {
         transform: translateX(50%);
@@ -87,15 +118,6 @@ img {
       }
     }
   }
-}
-
-.streamers{
-    display: flex;
-    img{
-        width: 2em;
-        height: 2em;
-        border-radius: 50%;
-    }
 }
 
 .back {
@@ -113,7 +135,6 @@ img {
   gap: 1.2em;
   transform: translateY(25%);
 
-
   .streaming-info {
     columns: 2;
     column-rule: 1px solid rgba(255, 255, 255, 0.35);
@@ -125,7 +146,6 @@ img {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 20px;
-
   }
   .game-stat {
     font-size: 0.8rem;
@@ -137,7 +157,7 @@ img {
   }
 }
 .background {
-  background: rgb(53, 154, 255);
+  background: rgb(40, 46, 54);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -166,7 +186,7 @@ img {
     }
   }
   .back {
-    transition: transform 250ms ease-in, opacity 150ms linear ;
+    transition: transform 250ms ease-in, opacity 150ms linear;
     opacity: 1;
     transform: translateY(0);
   }
