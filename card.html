@@ -11,13 +11,52 @@
     integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
     crossorigin="anonymous"
   /> 
+  <link rel="stylesheet" href="explore.css" />
+
     <title>Card</title>
   </head>
   <body>
+    <div
+    id="header"
+    style="
+      position: fixed;
+      top: 0;
+      left: 0;
+      flex-direction: row;
+      width: 100%;
+      background-color: rgb(24, 24, 24);
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 50px;
+      min-height: fit-content;
+    "
+  >
+    <!-- <button id="next-btn"> <svg width="30" height="35" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0.999999 1.41421C1.04238 0.41453 1.33832 0.0928822 2.41421 0C5.17564 2.76142 6.72386 4.30964 9.48528 7.07107L2.41421 14.1421C1.25443 14.008 0.940783 13.7037 0.999999 12.7279C0.999999 12.7279 6.84315 8 7 7.07107C7.15685 6.14214 0.999999 1.41421 0.999999 1.41421Z" fill="white"/>
+      </svg>
+      </button> -->
+
+    <ul>
+      <li>
+        <a class="animated-arrow" href="./index.html">
+          <span class="the-arrow -left">
+            <span class="shaft"></span>
+          </span>
+          <span class="main">
+            <span class="text"> Explore More </span>
+            <span class="the-arrow -right">
+              <span class="shaft"></span>
+            </span>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
     <div class="game">
         <div class="rank">3</div>
       <div class="front">
-        <img class="thumbnail" src="png/bg.jpeg" alt="nature" />
+        <img class="thumbnail" src="png/valorant.jpg" alt="nature" />
         <h3 class="name">Rust</h3>
         <div class="stats">
           <p class="viewers icon">539.6k</p>
