@@ -2,7 +2,7 @@
  Repo of my ui designs and svg's.
  
 
-<div style="display:flex; width:100%; height:100%; justify-content:space-between; flex-direction:row; " ><img  style="margin-right:20px;" src="https://github.com/satish-rajnale/Designs/blob/main/png/Halo.png" width="250px" height="500px"/><img  style="margin:10px;" src="https://github.com/satish-rajnale/Designs/blob/main/png/cod.png" width="250px" height="500px"/><img  style="margin:10px;" src="https://github.com/satish-rajnale/Designs/blob/main/png/Feed.png" width="250px" height="500px"/></div>
+<div style="display:flex; width:100%; height:100%; justify-content:space-between; flex-direction:row; " ><img  src="https://github.com/satish-rajnale/Designs/blob/main/png/Halo.png" width="250px" height="500px"/><img  style="margin:10px;" src="https://github.com/satish-rajnale/Designs/blob/main/png/cod.png" width="250px" height="500px"/><img  style="margin:10px;" src="https://github.com/satish-rajnale/Designs/blob/main/png/Feed.png" width="250px" height="500px"/></div>
 
 
 <img alt="oxygen markup" src="https://github.com/satish-rajnale/Designs/blob/main/png/oxygen.png" width="100%" height="100%"/>
